@@ -29,6 +29,17 @@ export default function App() {
           />
         )}
       </div>
+      <footer className="text-lightGrey absolute bottom-10">
+          By 
+        <a 
+          className="text-white hover:text-darkblue hover:underline hover:transition-500" 
+          href="https://github.com/GuiFraV/FrontEndMentor_Interactive_rating_component" 
+          target="_blank"
+        >
+          GuiFraV
+        </a>
+      </footer>
     </div>
+
   );
 }
