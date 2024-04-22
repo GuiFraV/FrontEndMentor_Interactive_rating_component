@@ -1,6 +1,6 @@
 import React from "react";
-import paiement from "../../public/payment_Two Color.png";
-import thank from "../../public/Thank.png";
+import paiement from "/payment_Two Color.png";
+import thank from "/Thank.png";
 
 const CommentedPart = ({ selectedRating }) => {
   return (

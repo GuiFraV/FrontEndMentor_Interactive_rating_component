@@ -1,6 +1,6 @@
 import React from "react";
-import star from "../../public/Star-removebg-preview.png";
-import how from "../../public/How.png";
+import star from "/Star-removebg-preview.png";
+import how from "/How.png";
 import BulleButton from "./BulleButton";
 
 const UncommentedPart = ({ selectedRating, setSelectedRating, handleSubmit, prevent }) => {
