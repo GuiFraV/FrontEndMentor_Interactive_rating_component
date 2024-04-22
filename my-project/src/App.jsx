@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import BulleBoutton from "./components/BulleBoutton"
+import BulleButton from "./components/BulleButton"
 
 import star from "../public/Star-removebg-preview.png"
 import how from "../public/How.png"
@@ -41,7 +41,7 @@ export default function App() {
         <form onSubmit={handleSubmit} className="w-[344.31px] flex flex-col justify-center absolute top-[253.54px] left-[32.31px]">
           <div className="flex justify-between h-[50.51px] mb-8">
            {[1, 2, 3, 4, 5].map((numero) => (
-            <BulleBoutton
+            <BulleButton
               key={numero}
               numero={numero}
               selected={selectedRating === numero}

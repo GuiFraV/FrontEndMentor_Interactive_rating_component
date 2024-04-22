@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BulleBoutton = ({numero, selected, onClick}) => {
+const BulleButton = ({numero, selected, onClick}) => {
   return (
     <button
         typze="button"
@@ -12,4 +12,4 @@ const BulleBoutton = ({numero, selected, onClick}) => {
   )
 }
 
-export default BulleBoutton
+export default BulleButton
