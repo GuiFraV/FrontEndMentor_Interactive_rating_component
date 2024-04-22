@@ -2,7 +2,7 @@ import React from "react";
 import paiement from "../../public/payment_Two Color.png";
 import thank from "../../public/Thank.png";
 
-const Rating = ({ selectedRating }) => {
+const CommentedPart = ({ selectedRating }) => {
   return (
     <div className="h-full w-full flex flex-col justify-evenly items-center">
       <img src={paiement} alt="paiement" width={162} height={108} className="" />
@@ -18,4 +18,4 @@ const Rating = ({ selectedRating }) => {
   );
 };
 
-export default Rating;
+export default CommentedPart;

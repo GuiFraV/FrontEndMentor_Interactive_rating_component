@@ -3,7 +3,7 @@ import star from "../../public/Star-removebg-preview.png";
 import how from "../../public/How.png";
 import BulleButton from "./BulleButton";
 
-const Question = ({ selectedRating, setSelectedRating, handleSubmit, prevent }) => {
+const UncommentedPart = ({ selectedRating, setSelectedRating, handleSubmit, prevent }) => {
   return (
     <>
       <div className="absolute left-[32.31px] top-[31.69px] w-[48.47px] h-[47.54px] border-darkblue border-2 rounded-full flex justify-center items-center">
@@ -30,7 +30,7 @@ const Question = ({ selectedRating, setSelectedRating, handleSubmit, prevent }) 
               key={numero}
               numero={numero}
               selected={selectedRating === numero}
-              onClick={() => setSelectedRating(numero)}
+              onClick={setSelectedRating}
             />
           ))}
         </div>
@@ -46,4 +46,4 @@ const Question = ({ selectedRating, setSelectedRating, handleSubmit, prevent }) 
   );
 };
 
-export default Question;
+export default UncommentedPart;

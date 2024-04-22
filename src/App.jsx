@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Rating from "./components/Rating";
-import Question from "./components/Question";
+import CommentedPart from "./components/CommentedPart";
+import UncommentedPart from "./components/UncommentedPart";
 
 export default function App() {
   const [selectedRating, setSelectedRating] = useState(null);
@@ -8,7 +8,8 @@ export default function App() {
 
   const prevent = (e) => {
     e.preventDefault();
-  }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowCommentedPart(true);
@@ -18,12 +19,11 @@ export default function App() {
     <div className="bg-veryDarkBlue h-screen w-screen flex items-center justify-center">
       <div className="relative w-[416px] h-[412px] bg-[radial-gradient(ellipse_at_center,_#232A34_0%,_#181E27_100%)] rounded-[30px]">
         {showCommentedPart ? (
-          <Rating selectedRating={selectedRating}/>
+          <CommentedPart selectedRating={selectedRating} />
         ) : (
-
-          <Question 
+          <UncommentedPart
             selectedRating={selectedRating}
-            setSelectedRating={selectedRating}
+            setSelectedRating={setSelectedRating}
             handleSubmit={handleSubmit}
             prevent={prevent}
           />
