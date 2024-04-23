@@ -16,7 +16,9 @@ export default function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShowCommentedPart(true);
+    if(selectedRating !== null){
+      setShowCommentedPart(true);
+    }
   };
 
   const handleBackToUncommented = () => {
@@ -48,7 +50,7 @@ export default function App() {
 
   return (
     <div className="bg-veryDarkBlue h-screen w-screen flex items-center justify-center">
-      <div className="relative w-[416px] h-[412px] bg-[radial-gradient(ellipse_at_center,_#232A34_0%,_#181E27_100%)] rounded-[30px] xs:w-[327px]">
+      <div className="relative lg:w-[416px] h-[412px] bg-[radial-gradient(ellipse_at_center,_#232A34_0%,_#181E27_100%)] rounded-[30px] xs:w-[327px]">
         {showCommentedPart ? (
           <div ref={commentedPartRef} className="h-full w-full ">
             <CommentedPart 
@@ -67,7 +69,7 @@ export default function App() {
           </div>
         )}
       </div>
-      <footer className="text-lightGrey absolute bottom-10">
+      <footer className="text-lightGrey absolute lg:bottom-10 xs:bottom-2">
           By 
         <a 
           className="text-white hover:text-darkblue hover:underline hover:transition-500" 
