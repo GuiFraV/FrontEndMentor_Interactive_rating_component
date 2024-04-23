@@ -1,21 +1,16 @@
 import React from "react";
-import star from "/Star-removebg-preview.png";
-import how from "/How.png";
+import star from "/icon-star.svg";
 import BulleButton from "./BulleButton";
 
 const UncommentedPart = ({ selectedRating, setSelectedRating, handleSubmit, prevent }) => {
   return (
     <>
-      <div className="absolute left-[32.31px] top-[31.69px] w-[48.47px] h-[47.54px] border-darkblue border-2 rounded-full flex justify-center items-center">
+      <div className="absolute left-[32.31px] top-[31.69px] w-[48.47px] h-[47.54px] bg-darkblue rounded-full flex justify-center items-center">
         <img src={star} alt="Une jolie étoile" width={16.91} height={15.85} />
       </div>
-      <img
-        src={how}
-        alt="Une jolie étoile"
-        width={200.93}
-        height={35}
-        className="absolute left-[32.31px] top-[108px]"
-      />
+
+      <h1 className="w-[236.93px] h-[35px] text-white absolute left-[32.31px] top-[108px] text-3xl font-bold">How did we do ?</h1>
+
       <p className="absolute text-lightGrey w-[345.3px] h-[72px] left-[32.31px] top-[158px]">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
