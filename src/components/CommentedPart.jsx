@@ -14,9 +14,6 @@ const CommentedPart = ({ selectedRating , handleBackToUncommented}) => {
     setIsHovered(false)
   }
   
-  
-  
-  
   return (
     <div className="h-full w-full flex flex-col justify-evenly items-center">
       <img src={paiement} alt="paiement" width={162} height={108} className="" />
