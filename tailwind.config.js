@@ -11,6 +11,9 @@ export default {
         ...colors
       }
     },
+    screens : {
+      'xs': "375px"
+    }
   },
   plugins: [],
 }

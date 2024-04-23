@@ -27,12 +27,12 @@ const CommentedPart = ({ selectedRating , handleBackToUncommented}) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}  
       >
-        <h1 className=" text-white text-3xl font-bold">
-          {isHovered ? "Go Back !" : " Thank You !"}
+        <h1 className=" text-white text-3xl font-bold xs:text-2xl">
+          {isHovered ? "Go Back!" : " Thank You!"}
         </h1>
       </button>
 
-      <p className="text-lightGrey text-center w-[365px]">
+      <p className="text-lightGrey text-center w-[365px] xs:text-sm xs:w-[279px]">
         We appreciate you taking the time to give a rating. If you ever need
         more support, don't hesitate to get in touch!
       </p>

@@ -48,7 +48,7 @@ export default function App() {
 
   return (
     <div className="bg-veryDarkBlue h-screen w-screen flex items-center justify-center">
-      <div className="relative w-[416px] h-[412px] bg-[radial-gradient(ellipse_at_center,_#232A34_0%,_#181E27_100%)] rounded-[30px]">
+      <div className="relative w-[416px] h-[412px] bg-[radial-gradient(ellipse_at_center,_#232A34_0%,_#181E27_100%)] rounded-[30px] xs:w-[327px]">
         {showCommentedPart ? (
           <div ref={commentedPartRef} className="h-full w-full ">
             <CommentedPart 
