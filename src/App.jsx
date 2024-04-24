@@ -69,6 +69,7 @@ export default function App() {
           </div>
         )}
       </div>
+      
       <footer className="text-lightGrey absolute lg:bottom-10 xs:bottom-2">
           By 
         <a 

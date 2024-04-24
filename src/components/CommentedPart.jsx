@@ -22,7 +22,7 @@ const CommentedPart = ({ selectedRating , handleBackToUncommented}) => {
       </p>
   
       <button 
-        className="hover:bg-orange duration-500 py-2 px-4 rounded-full h-[45px] w-[341px]"
+        className="hover:bg-orange duration-500 py-2 px-4 rounded-full h-[45px] lg:w-[341px] xs:w-[279px]"
         onClick={handleBackToUncommented}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}  

@@ -17,7 +17,7 @@ const UncommentedPart = ({ selectedRating, setSelectedRating, handleSubmit, prev
       </p>
       <form
         onClick={prevent}
-        className="w-[344.31px] flex flex-col justify-center absolute top-[253.54px] left-[32.31px]"
+        className="w-[344.31px] flex flex-col justify-center absolute top-[253.54px] lg:left-[32.31px] xs:left-6"
       >
         <div className="flex justify-between h-[50.51px] mb-8 lg:w-[344.31px] xs:w-[281px]">
           {[1, 2, 3, 4, 5].map((numero) => (
